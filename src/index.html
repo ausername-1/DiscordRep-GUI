@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>DiscordRep GUI</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+  </head>
+  <body>
+    <h1 class="title">DiscordRep GUI</h1>
+    <form id="checkrep" class="box">
+      <div class="field">
+        <label class="label">API Key</label>
+        <div class="control">
+          <input class="input" id="key" placeholder="User ID">
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">User ID</label>
+        <div class="control">
+          <input class="input" id="id" placeholder="User ID">
+        </div>
+      </div>
+      <button class="button is-primary" id="submit">Check</button>
+    </form>
+    <div class="box">
+      <label id="downvotes"><b>Down Votes:</b><br></label>
+      <label id="optout"><b>Opt Out?</b><br></label>
+      <label id="rank"><b>Rank:</b><br></label>
+      <label id="registered"><b>Registered:</b><br></label>
+      <label id="staff"><b>Staff?</b><br></label>
+      <label id="upvotes"><b>Upvotes:</b><br></label>
+      <label id="xp"><b>XP:</b><br></label>
+   </div>
+    <h1 class="title">Infractions</h1>
+    <form id="checkinfractions" class="box">
+      <div class="field">
+        <label class="label">API Key</label>
+        <div class="control">
+          <input class="input" id="key2" placeholder="API Key">
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">User ID</label>
+        <div class="control">
+          <input class="input" id="id2" placeholder="User ID">
+        </div>
+      </div>
+      <button class="button is-primary" id="submit">Check</button>
+    </form>
+    <div class="box">
+      <label id="type"><b>Type:</b><br></label>
+    </div>
+    <script src="render.js"></script>
+  </body>
+</html>
